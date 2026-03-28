@@ -1,0 +1,73 @@
+{
+  "translation": {
+    "welcome_message": "नमस्ते! अब आप व्याख्यान का अध्ययन करना शुरू करेंगे।",
+    "choose_method": "आइए तय करें कि आप इसे कैसे करना चाहते हैं।,",
+    "how_do_you_want_to_proceed": "आप इसे कैसे करना चाहते हैं",
+    "microphone": "माइक्रोफ़ोन का उपयोग करना",
+    "manual_input": "मैनुअल इनपुट",
+    "typing_only": "आप केवल टाइप करके प्रश्नों का उत्तर दे पाएंगे",
+    "voice_answers": "आप आवाज से सवालों के जवाब दे पाएंगे",
+    "welcome_lecture": "स्वागत है! आप व्याख्यान में हैं:",
+    "start_lecture_prompt": "व्याख्यान शुरू करने के लिए दबाएं",
+    "welcome_back": "नमस्ते! पिछली बार आपने यहाँ रोका था:",
+    "topic_name": "विषय/अनुभाग का शीर्षक",
+    "continue_lecture_prompt": "अध्ययन जारी रखने के लिए, दबाएं",
+    "pronunciation_speed": "उच्चारण गति",
+    "interaction_type": "इंटरैक्शन प्रकार",
+    "settings": "सेटिंग्स",
+    "variable_fetch_error": "चर प्राप्त करने में त्रुटि!",
+    "lecture_ended": "व्याख्यान समाप्त हुआ",
+    "control_unavailable": "नियंत्रण अनुपलब्ध है!",
+    "scene": "दृश्य",
+    "start": "शुरू करें",
+    "pause": "रोकें",
+    "stop": "बंद करें",
+    "topics": "विषय",
+    "chat": "बातचीत",
+    "subtitles": "उपशीर्षक",
+    "settingsHelp": "सेटिंग्स",
+    "raiseHand": "हाथ उठाएँ",
+    "blocks": {
+      "chat": {
+        "generate_response_text": "एक प्रतिक्रिया उत्पन्न करना",
+        "init_chat_text": "चैट को इनिशियलाइज़ करना"
+      },
+      "controller": {
+        "control_unavailable_text": "आप केवल टेक्स्ट ब्लॉक्स के लिए अगले ब्लॉक पर जा सकते हैं",
+        "control_unavailable_text_2": "आप केवल टेक्स्ट ब्लॉक्स के लिए पिछले ब्लॉक पर जा सकते हैं"
+      },
+      "just": {
+        "informationProcessingText": "प्रसंस्करण जानकारी"
+      },
+      "prompt": {
+        "text_analysis_message": "मैं कर रहा हूँ का विश्लेषण आपके अनुरोध पर । ",
+        "prompt_error_text": "उपयोगकर्ता की प्रतिक्रिया को संसाधित करने में त्रुटि!!!!",
+        "prompt_idle_text": "उपयोगकर्ता की प्रतिक्रिया प्रसंस्करण शुरू नहीं हुई है!!!!",
+        "prompt_pending_text1": "टिप्पणियां अपलोड करना",
+        "prompt_pending_text2": "उपयोगकर्ता की प्रतिक्रिया पर टिप्पणियां अपलोड करना!!!!",
+        "prompt_succeeded_text": "उपयोगकर्ता की प्रतिक्रिया पर एक टिप्पणी तैयार है!!!!",
+        "prompt_failed_text": "उपयोगकर्ता की प्रतिक्रिया पर टिप्पणी तैयार नहीं है, एक त्रुटि!!!!" 
+      },
+      "question": {
+        "save_question_error": "प्रतिक्रिया सहेजने में त्रुटि",
+        "upload_question_text": "एक प्रश्न अपलोड करना",
+        "no_form_question": "एक सवाल नहीं बना सका",
+        "form_question_error": "प्रश्न प्राप्त करते समय त्रुटि!" 
+      }
+    },
+    "chat_input": {
+      "hint_warning": "अपना जवाब इनपुट फ़ील्ड में दर्ज करें!",
+      "hint_text": "स्पेस और जवाब रखें",
+      "hint_text_2": "बात करें...",
+      "hint_text_3": "आवाज पहचान चल रही है...",
+      "hint_text_4": "स्पेस बिंदु रखें",
+      "hint_text_5": ", माइक्रोफ़ोन का उपयोग करके प्रश्न का उत्तर देने के लिए।",
+      "start_input": "टाइप करना शुरू करें"
+    },
+    "answer_mode_scene": {
+      "no_input_devices": "इनपुट डिवाइस उपलब्ध नहीं हैं",
+      "no_microphone_permission": "आपने माइक्रोफ़ोन के उपयोग को अस्वीकार किया है! कृपया ब्राउज़र सेटिंग्स में उपयोग को अनुमति दें।",
+      "no_microphone_permission_2": "थोड़ा इंतजार करें"
+    }
+  }
+}

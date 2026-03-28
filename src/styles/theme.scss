@@ -1,0 +1,39 @@
+:root {
+  --dt-text-color: #07011b;
+  --dt-background: #f9f9fa;
+  --dt-background-dark: #d7d8d8;
+  --dt-background-dark-2: #eeedef;
+  --dt-background-light: #f3f4f5;
+  --dt-background-active: #74D414;
+  --dt-actent-color: #74D414;
+  --dt-bg: #f5f6f7;
+  --bg-active-list: #e4e5e6;
+  --collapse-text: white;
+  --bg-play-icon-active: #fdfdfd;
+  --bg-play-icon-disable: #9ca2ad;
+  --bg-icon-play-active: #ffffff;
+  --bg-icon-play-disabled: #74D414;
+  --gradient: linear-gradient(360deg, #7a7a7a 0%, #eaeaea 100%);
+  --bg-setting: #e3e4e5;
+  --text: #7b7b7b;
+}
+
+.dark-mode {
+  --dt-text-color: #fff;
+  --dt-background: #07011b;
+  --dt-background-dark: #090c11;
+  --dt-background-dark-2: #1A1E27;
+  --dt-background-light: #1e222e;
+  --dt-background-active: #74D414;
+  --dt-actent-color: #74D414;
+  --dt-bg: #1a1e27;
+  --bg-active-list: #0C0F12;
+  --collapse-text: #0C0F12;
+  --bg-play-icon-active: #0C0F12;
+  --bg-play-icon-disable: #1A1E27;
+  --bg-icon-play-active: #9ca2ad;
+  --bg-icon-play-disabled: #74D414;
+  --gradient: linear-gradient(360deg, #000000 0%, #12151C 100%);
+  --bg-setting: #0C0F12;
+  --text: #fff;
+}

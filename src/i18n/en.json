@@ -1,0 +1,73 @@
+{
+  "translation": {
+    "welcome_message": "Hello! You are about to start studying lectures.",
+    "choose_method": "Let's decide how you want to do it,",
+    "how_do_you_want_to_proceed": "How do you want to proceed",
+    "microphone": "Using a microphone",
+    "manual_input": "Manual input",
+    "typing_only": "You will only be able to answer questions by typing",
+    "voice_answers": "You will be able to answer questions by voice",
+    "welcome_lecture": "Welcome! You are on the lecture:",
+    "start_lecture_prompt": "To start the lecture, press",
+    "welcome_back": "Hi! Last time you stopped at:",
+    "topic_name": "Topic/Section Title",
+    "continue_lecture_prompt": "To continue studying, press ",
+    "pronunciation_speed": "Pronunciation speed",
+    "interaction_type": "Interaction type",
+    "settings": "Settings",
+    "variable_fetch_error": "Error fetching variables!",
+    "lecture_ended": "Lecture ended",
+    "control_unavailable": "Control unavailable!",
+    "scene": "Scene",
+    "start": "Start",
+    "pause": "Pause",
+    "stop": "Stop",
+    "topics": "Topics",
+    "chat": "Chat",
+    "subtitles": "Subtitles",
+    "settingsHelp": "Settings",
+    "raiseHand": "Raise hand",
+     "blocks": {
+      "chat": {
+        "generate_response_text": "Response generation...",
+        "init_chat_text": "Initialization of the chat..."
+      },
+      "controller": {
+        "control_unavailable_text": "You can only move to the next block for text blocks",
+        "control_unavailable_text_2": "You can only move to the previous block for text blocks"
+      },
+      "just": {
+        "informationProcessingText": "Processing information..."
+      },
+      "prompt": {
+        "text_analysis_message": "I'm analyzing your request...",
+        "prompt_error_text": "Error processing the user's response!!!!",
+        "prompt_idle_text": "The user's response processing has not started!!!!",
+        "prompt_pending_text1": "Uploading comments...",
+        "prompt_pending_text2": "Uploading comments on the user's response!!!!",
+        "prompt_succeeded_text": "A comment on the user's response is ready!!!!",
+        "prompt_failed_text": "Comment on user response is not ready, error!!!!" 
+      },
+      "question": {
+        "save_question_error": "Error saving the response",
+        "upload_question_text": "Uploading a question...",
+        "no_form_question": "Couldn't form a question",
+        "form_question_error": "Error when receiving a question!" 
+      }
+    },
+      "chat_input": {
+        "hint_warning": "Enter your answer in the input field!",
+        "hint_text": "Hold the space and answer",
+        "hint_text_2": "Speak...",
+        "hint_text_3": "Voice recognition is in progress...",
+        "hint_text_4": "Hold the space",
+        "hint_text_5": ", to answer the question using a microphone.",
+        "start_input": "Start typing"
+      },
+      "answer_mode_scene": {
+        "no_input_devices": "No input devices",
+        "no_microphone_permission": "You have blocked access to the microphone! Please allow access in the browser settings.",
+        "no_microphone_permission_2": "Wait a little"
+      }
+  }
+}

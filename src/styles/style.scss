@@ -1,0 +1,408 @@
+@mixin topic-base {
+  padding: 8px;
+  border-radius: 8px;
+}
+
+@mixin collapse-base {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  gap: 8px;
+  font-size: 14px;
+  border-radius: 6px;
+  align-items: center;
+}
+
+@mixin play-icon {
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+}
+
+#page-header {
+  display: none;
+}
+
+#mod-dtlecture-root {
+
+  .ReactCollapse--collapse {
+    transition: height 500ms;
+  }
+
+  .base-container {
+
+    display: flex;
+    min-height: 65vh;
+
+    .left-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 7rem;
+
+      .left-panel-logo {
+        display: flex;
+        justify-content: center;
+        padding-top: .1rem;
+      }
+
+    }
+
+    .right-panel {
+      flex-grow: 1;
+      padding-left: 20px;
+
+      &.single {
+        padding-left: 86px;
+      }
+
+      .start-scene-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 10px;
+        background-color: var(--dt-background-dark-2);
+
+        p {
+          font-size: 40px;
+        }
+
+        .colorize {
+          color: var(--dt-actent-color);
+        }
+
+        .small {
+          font-size: 32px;
+        }
+      }
+
+      .continue-scene-container {
+        height: 100%;
+        padding: 13rem 0 0 70px;
+        border-radius: 10px;
+        background-color: var(--dt-background-dark-2);
+
+        p {
+          font-size: 40px;
+        }
+
+        .colorize {
+          color: var(--dt-actent-color);
+        }
+
+        .small {
+          font-size: 32px;
+        }
+      }
+
+      .answer-mode-scene-container {
+        height: 100%;
+        padding: 10rem 0 50px 70px;
+        border-radius: 10px;
+        background-color: var(--dt-background-dark-2);
+
+        p {
+          font-size: 40px;
+        }
+
+        .colorize {
+          color: var(--dt-actent-color);
+        }
+
+        .actions-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+
+          .actions-item {
+            display: grid;
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+            gap: 1rem;
+            align-items: center;
+            font-size: 16px;
+
+            .action {
+              background-color: var(--dt-background-dark);
+              border-radius: 8px;
+              padding: 1rem;
+              color: var(--dt-actent-color);
+              grid-column: span 3 / span 3;
+              text-align: center;
+              cursor: pointer;
+
+              &:hover {
+                background-color: var(--dt-actent-color);
+                color: var(--dt-background-dark);
+              }
+            }
+
+            .description {
+              grid-column: span 8 / span 8;
+            }
+          }
+        }
+      }
+
+      .answer-mode-scene-container-spin-wrapper {
+        height: 100% !important;
+
+        .ant-spin-container {
+          height: 100% !important;
+        }
+      }
+
+      .topics {
+        background-color: var(--dt-bg);
+        border-radius: 10px;
+        height: 100%
+      }
+
+      .topicsActive {
+        @include topic-base;
+        background: var(--bg-active-list);
+      }
+
+      .text-time {
+        color: var(--dt-text-color);
+      }
+
+      .topicsDisabled {
+        @include topic-base;
+        background: transparent;
+      }
+
+      .active-collapse {
+        @include collapse-base;
+        color: var(--collapse-text);
+        background-color: #74D414;
+
+      }
+
+      .disabled-collapse {
+        @include collapse-base;
+        color: #9DA3AE;
+        background-color: transparent;
+      }
+
+      .play-icon-active {
+        @include play-icon;
+        background-color: var(--bg-play-icon-active);
+      }
+
+      .play-icon-disabled {
+        @include play-icon;
+        background-color: var(--bg-play-icon-disable);
+      }
+
+      .bg-icon-play-active {
+        fill: var(--bg-icon-play-active);
+      }
+
+      .bg-icon-play-disabled {
+        fill: var(--bg-icon-play-disabled);
+      }
+
+      .chat {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 100%;
+        background-color: var(--bg-active-list);
+        border-radius: 10px;
+      }
+
+      .chat-message {
+        width: 90%;
+        padding: 16px 11px;
+        border-radius: 16px;
+        background: var(--dt-bg);
+      }
+
+      .chat-input {
+        background-color: var(--dt-background-dark-2);
+      }
+
+      .chat-loader {
+        margin: 0 10px 24px 10px;
+        background: var(--gradient);
+        padding: 12px 10px;
+        font-size: 16px;
+        color: #B1FA00;
+        border-radius: 8px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .settings-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      background-color: var(--dt-bg);
+      border-radius: 10px;
+      gap: 0.4rem;
+    }
+
+    .settings-type {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-setting);
+      padding: 0.1rem 0.9rem;
+      margin: 0.1rem;
+      border-radius: 8px;
+      gap: 1rem;
+    }
+
+    .settings-speed-active {
+      color: #0C0F12;
+      background-color: #B1FA00
+    }
+
+    .settings-speed {
+      color: var(--text);
+      background-color: var(--dt-background-dark-2);
+    }
+
+    .settings-text-active {
+      color: var(--dt-text-color);
+    }
+
+    .settings-text {
+      color: #4F5257;
+    }
+
+    .control-bar {
+      background-color: var(--dt-background-light);
+      display: flex;
+      flex-direction: column;
+      gap: .25rem;
+      padding: .25rem;
+      height: auto;
+      border-radius: 10px;
+
+      .control-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        background-color: var(--dt-background-dark);
+        border-radius: 20%;
+        cursor: pointer;
+        max-width: 67px;
+        max-height: 50px;
+
+        &.active {
+          background-color: var(--dt-background-active);
+        }
+
+        &.disabled {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          .help {
+            display: block;
+          }
+        }
+
+        .help {
+          display: none;
+          user-select: none
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  #mod-dtlecture-root .base-container {
+    //flex-direction: column;
+
+    .left-panel {
+      gap: 2rem;
+      padding-bottom: 10px;
+
+      .control-bar {
+        //flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .right-panel {
+      padding-left: 50px !important;
+
+      .start-scene-container {
+        padding: 10px;
+      }
+
+      .right-panel-adaptive {
+        flex-direction: column;
+        min-height: 60vh !important;
+        height: auto !important;
+      }
+
+      .answer-mode-scene-container {
+        //padding: 10px 10px;
+
+        .actions-wrapper {
+          .actions-item {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .answer-mode-scene-container {
+    padding: 10px 10px !important;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1267px) {
+  .answer-mode-scene-container {
+    padding: 4rem 0 10px 70px !important;
+  }
+}
+
+@media (min-width: 1268px) and (max-width: 1589px) {
+  .answer-mode-scene-container {
+    padding: 4rem 0 10px 70px !important;
+  }
+}
+
+
+.right-panel-adaptive {
+  height: 60vh !important;
+}
+
+
+@media (max-width: 768px) {
+  .wrapper-course {
+    padding: 5px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #mod-dtlecture-root .base-container {
+    flex-direction: column;
+
+    .left-panel {
+      gap: 3rem;
+
+      .control-bar {
+        flex-direction: row;
+      }
+    }
+
+    .right-panel {
+      padding-left: 0 !important;
+
+    }
+  }
+}
